@@ -26,7 +26,11 @@ plot(sub_data$dt, sub_data$Sub_metering_1, type = "l", xlab = "", ylab = "Energy
 lines(sub_data$dt, sub_data$Sub_metering_2, col="red")
 lines(sub_data$dt, sub_data$Sub_metering_3, col="blue")
 #creating the legend
-legend("topright", legend = c("sub_metering_1", "sub_metering_2", "sub_metering_3"), col = c("black", "red", "blue"), lwd = 1)
+legend("topright", legend = c("sub_metering_1", "sub_metering_2", "sub_metering_3"), 
+			col = c("black", "red", "blue"), 
+			lty = 1, 
+			lwd = 2, 
+			bty = "n")
 
 
 #row1:col2 plot
